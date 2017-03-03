@@ -15,7 +15,7 @@
     <!--<div class="navbar navbar-inverse"> dark navbar-->
     <!--<div class="navbar navbar-inverse navbar-static-top"> navbar is totally at the top-->
     <!--<div class="navbar navbar-invers navbar-fixed-desktop"> navbar like position fixed-->
-      <div class="container-fluid">
+      <div class="container-fluid"> <!--adding -fluid eliminates the padding right and left!-->
 
 
         <div class="navbar-header">
@@ -78,6 +78,66 @@
 
 
 
+<!--making the upper-middle JUMBOTRON-->
+    <section class="container"> <!--makes it responsive-->
+
+      <div class="jumbotron text-center"> <!--jumbotron=takes 12 grides/ text-center=makes the content be alligned in the center-->
+            <h1>Hello, World!</h1>
+            <p>Have tons of labels? Rendering problems can arise when you have dozens of inline labels within a narrow container, each containing its own inline-block element (like an icon). The way around this is setting display: inline-block;. For context and an example, see #13219.</p>
+            <a class="btn btn-default">Watch now!</a>
+            <a class="btn btn-info ">Tweet it!</a> <!--btn-info= makes the button skyblue-->
+      </div>
+
+    </section>
+
+
+
+
+
+<!--creating the middle GRID-SYSTEM-->
+    <section class="container text-center">
+
+      <div class="row">
+        <div class="col-md-4"> <!--sm= by small/ md=by medium/ lg=by large/ it still will show the text horizontally-->
+          <h3><a href="#">First column</a></h3>
+          <p>No default class Alerts don't have default classes, only base and modifier classes. A default gray alert doesn't make too much sense, so you're required to specify a type via contextual class. Choose from success, info, warning, or danger. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+          <a href="#" class="btn btn-default">See more!</a>
+        </div>
+        <div class="col-md-4">
+          <h3><a href="#">Second column</a></h3>
+          <p>No default class Alerts don't have default classes, only base and modifier classes. A default gray alert doesn't make too much sense, so you're required to specify a type via contextual class. Choose from success, info, warning, or danger. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+          <a href="#" class="btn btn-default">See more!</a>
+        </div>
+        <div class="col-md-4">
+          <h3><a href="#">Third column</a></h3>
+          <p>No default class Alerts don't have default classes, only base and modifier classes. A default gray alert doesn't make too much sense, so you're required to specify a type via contextual class. Choose from success, info, warning, or danger. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+          <a href="#" class="btn btn-default">See more!</a>
+        </div>
+
+
+
+
+      </div>
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -86,7 +146,7 @@
 
 <!--footer-fixed-->
     <footer class="navbar navbar-default navbar-fixed-bottom"> <!--will always stay at the bottom when scrolling-->
-      <div class="container"> <!-- makes the navbar visible-->
+      <div class="container"> <!-- container adds padding=15px right and left-->
         <p class="navbar-text pull-left">Site build by Rick</p> <!-- navbar-text makes the tet be possition vertically in the middle-->
         <a href="#" class="navbar-btn btn btn-danger pull-right ">Subscribe on Youtube</a> <!--navbar-btn=creates a button and allignes it vertically in the middle/ btn=general for button/ btn-danger=makes the button red/ pull-right=float-right -->
 
