@@ -1,0 +1,22 @@
+
+
+
+
+
+.margin-right-left{
+  margin-left: 1px;
+  margin-right: 1px;
+}
+
+.margin-bottom{
+  margin-bottom: 70px;
+}
+
+
+
+.page-header {
+  margin-top: 0;
+}
+.panel-body {
+  padding-top: 0;
+}

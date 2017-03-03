@@ -1,0 +1,135 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="Hairdresser" content="googlesearch" />
+    <meta name="author" content="Rick Warling"  />
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="style.css" /> <!--stylesheet muss unter bootstrap stehen weil html von oben nach unten liest und somit kann man dann mit dieser cssfile Veränderungen vornehmen-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hairdresser Hans</title>
+  </head>
+  <body>
+<!-- Brand and toggle get grouped for better mobile display -->
+    <nav class="navbar navbar-inverse navbar-static-top">
+    <!--<div class="navbar navbar-default"> light navbar-->
+    <!--<div class="navbar navbar-inverse"> dark navbar-->
+    <!--<div class="navbar navbar-inverse navbar-static-top"> navbar is totally at the top-->
+    <!--<div class="navbar navbar-invers navbar-fixed-desktop"> navbar like position fixed-->
+      <div class="container-fluid"> <!--adding -fluid eliminates the padding right and left!-->
+
+
+        <div class="navbar-header">
+
+          <a href="#" class="navbar-brand">Tech Site</a> <!--gives the title of the navbar-->
+
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navHeaderCollapse">
+            <span class="sr-only">Toggle navigation</span> <!--when clicked on the button the user sees which link he is actually on-->
+            <span class="icon-bar"></span> <!--gives the button 3 lines-->
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+        </div>
+
+<!-- Collect the nav links, forms, and other content for toggling -->
+
+        <div class="collapse navbar-collapse" id="navHeaderCollapse"> <!--navHeaderCollapse is like an ID to make the button when using the website on a mobile phone-->
+  <!--The content here will be only visible if we press that button (on a mobile phone)-->
+    <!--LEFT-side-->
+
+          <ul class="nav navbar-nav navbar-left">
+      <!--list-itmes-->
+              <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+              <li><a href="#">Link</a></li>
+
+              <li class="dropdown"</li> <!--makes a dropdown-menu-->
+      <!--dropdown-menu-->
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Social Media <b class="caret"><!--mmakes an arrow--></b></a> <!--must be a href="#"!!-->
+                <ul class="dropdown-menu"> <!--contains all the elements of the dropdown.menu-->
+                  <li><a href="#">Facebook</a></li>
+                  <li><a href="#">Twitter</a></li>
+                  <li><a href="#">Linkedin</a></li>
+                  <li><a href="#">Instagram</a></li>
+                </ul>
+       <!--list-itmes-->
+              <li><a href="#contact" data-toggle="modal">Contact us</a></li> <!--#contact=let the browser know that it opens the link to contact (scroll down)/ data-toggle="modal" =opens here a modal(used also by dropdown-menu with data-toggle="dropdown")/-->
+
+          </ul> <!-- /navbar-left-->
+
+    <!--Right-side-->
+           <ul class="nav navbar-nav navbar-right">
+      <!--Search-field + Submit-->
+            <form class="navbar-form margin-right-left">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+              </div>
+              <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+
+          </ul><!--/navbar-right-->
+
+<!--End of the content which will be only visible if we press that button (on a mobile phone)-->
+        </div><!--/ .navbar-collapse-->
+
+      </div><!--/ .container-fluid-->
+    </nav>
+
+<!-- adding a panel-->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <div class="page-header">
+                <h3>Blog<small> Posted on 03.03.2017</small></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--footer-fixed-->
+    <footer class="navbar navbar-default navbar-fixed-bottom"> <!--will always stay at the bottom when scrolling-->
+      <div class="container"> <!-- container adds padding=15px right and left-->
+        <p class="navbar-text pull-left">Site built by Rick</p> <!-- navbar-text makes the tet be possition vertically in the middle-->
+        <a href="#" class="navbar-btn btn btn-danger pull-right ">Subscribe on Youtube</a> <!--navbar-btn=creates a button and allignes it vertically in the middle/ btn=general for button/ btn-danger=makes the button red/ pull-right=float-right -->
+
+      </div>
+    </footer>
+
+<!--creating the model for contact/when we create it at the bottom it will load last when someone clicks on the website!-->
+    <div class="modal fade" id="contact" role="dialog"> <!--fade= transition-->
+      <div class="modal-dialog" >
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4>Contact Tech Site</h4>
+            <div class="modal-body">
+              <p>Bootstrap is a CSS framework, which means that it has a lot of pre-written CSS code that you can use in your HTML project. Bootstrap was created by two software developers at Twitter and it soon became the most popular CSS framework. Websites that use Bootstrap look beautiful and modern and are able to adapt to different screen sizes (even to small mobile screens). This ability is called responsive design.</p>
+            </div>
+            <div class="modal-footer">
+              <a class="btn btn-default" data-dismiss="modal">Close</a> <!--data-dismiss= will close sth, here we close the modal-->
+              <a class="btn btn-primary" data-dismiss="modal">Return to home</a
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>
