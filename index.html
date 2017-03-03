@@ -9,27 +9,57 @@
     <title>Hairdresser Hans</title>
   </head>
   <body>
-    <!--<div class="navbar navbar-default"> light navbar-->
-    <!--<div class="navbar navbar-inverse"> dark navbar-->
-    <!--<div class="navbar navbar-inverse navbar-static-top"> navbar is totally at the top-->
-    <!--<div class="navbar navbar-invers navbar-fixed-desktop"> navbar like position fixed-->
-    <div class="navbar navbar-inverse navbar-static-top">
-      <div class="container">
+<!-- Brand and toggle get grouped for better mobile display -->
+    <nav class="navbar navbar-inverse">
+      <!--<div class="navbar navbar-default"> light navbar-->
+      <!--<div class="navbar navbar-inverse"> dark navbar-->
+      <!--<div class="navbar navbar-inverse navbar-static-top"> navbar is totally at the top-->
+      <!--<div class="navbar navbar-invers navbar-fixed-desktop"> navbar like position fixed-->
+      <div class="container-fluid">
         <div class="navbar-header">
-          <a href="#" class="navbar-brand"> <!--gives the title of the navbar-->
-            Tech Site
-          </a>
-          <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">f</button>
-          <div class="collapse navbar-collapse navHeaderCollapse"> <!--navHeaderCollapse is like an ID to make the button when using the website on a mobile phone-->
-            <!--The content here will be only visible if we press that button (on a mobile phone)-->
-            <ul class="nav navbar-nav navbar-right"> <!-- nav navbar-nav=styling for the navigation-bar/ navbar-right=alligned to the right-->
-              <li><a href="#">Home</a></li>
-            </ul>
-          </div>
+          <a href="#" class="navbar-brand">Brand</a> <!--gives the title of the navbar-->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navHeaderCollapse">
+            <span class="sr-only">Toggle navigation</span> <!--when clicked on the button the user sees which link he is actually on-->
+            <span class="icon-bar"></span> <!--gives the button 3 lines-->
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
         </div>
-      </div>
-    </div>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>﻿
+<!-- Collect the nav links, forms, and other content for toggling -->
+
+        <div class="collapse navbar-collapse" id="navHeaderCollapse"> <!--navHeaderCollapse is like an ID to make the button when using the website on a mobile phone-->
+<!--The content here will be only visible if we press that button (on a mobile phone)-->
+<!-- on the LEFT-side-->
+          <ul class="nav navbar-nav navbar-left"> <!-- nav navbar-nav=styling for the navigation-bar/ navbar-right=alligned to the right-->
+              <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+              <li><a href="#">Link</a></li>
+<!--Drop-down-menu-->
+              <li class="dropdown"</li> <!--makes a dropdown-menu-->
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Social Media <b class="caret"><!--mmakes an arrow--></b></a> <!--must be a href="#"!!-->
+                <ul class="dropdown-menu"> <!--contains all the elements of the dropdown.menu-->
+                  <li><a href="#">Facebook</a></li>
+                  <li><a href="#">Twitter</a></li>
+                  <li><a href="#">Linkedin</a></li>
+                  <li><a href="#">Instagram</a></li>
+                </ul>
+              <li><a href="#">Contact us</a></li>
+
+          </ul>
+
+<!--Search+ Submit-button on the Right-side-->
+           <ul class="nav navbar-nav navbar-right">
+            <form class="navbar-form">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+              </div>
+              <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+          </ul>
+        </div><!--/ .navbar-collapse-->
+
+      </div><!--/ .container-fluid-->
+    </nav>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
   </body>
 </html>
