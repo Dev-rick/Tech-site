@@ -4,13 +4,32 @@
     <meta name="Hairdresser" content="googlesearch" />
     <meta name="author" content="Rick Warling"  />
     <link type="text/css" rel="stylesheet" href="style.css" />
+    <link href="css/bootstrap.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hairdresser Hans</title>
   </head>
   <body>
-    Hairdresser Hans
-    <h1>New Highline</h1>
-    <a href="google.com">Google</a>
-
+    <!--<div class="navbar navbar-default"> light navbar-->
+    <!--<div class="navbar navbar-inverse"> dark navbar-->
+    <!--<div class="navbar navbar-inverse navbar-static-top"> navbar is totally at the top-->
+    <!--<div class="navbar navbar-invers navbar-fixed-desktop"> navbar like position fixed-->
+    <div class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="#" class="navbar-brand"> <!--gives the title of the navbar-->
+            Tech Site
+          </a>
+          <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">f</button>
+          <div class="collapse navbar-collapse navHeaderCollapse"> <!--navHeaderCollapse is like an ID to make the button when using the website on a mobile phone-->
+            <!--The content here will be only visible if we press that button (on a mobile phone)-->
+            <ul class="nav navbar-nav navbar-right"> <!-- nav navbar-nav=styling for the navigation-bar/ navbar-right=alligned to the right-->
+              <li><a href="#">Home</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>﻿
+    <script src="js/bootstrap.js"></script>
   </body>
 </html>
