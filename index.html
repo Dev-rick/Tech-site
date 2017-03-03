@@ -52,9 +52,9 @@
                   <li><a href="#">Instagram</a></li>
                 </ul>
        <!--list-itmes-->
-              <li><a href="#">Contact us</a></li>
+              <li><a href="#contact" data-toggle="modal">Contact us</a></li> <!--#contact=let the browser know that it opens the link to contact (scroll down)/ data-toggle="modal" =opens here a modal(used also by dropdown-menu with data-toggle="dropdown")/-->
 
-          </ul><!--/navbar-left-->
+          </ul> <!-- /navbar-left-->
 
     <!--Right-side-->
            <ul class="nav navbar-nav navbar-right">
@@ -98,6 +98,7 @@
     <section class="container text-center">
 
       <div class="row">
+
         <div class="col-md-4"> <!--sm= by small/ md=by medium/ lg=by large/ it still will show the text horizontally-->
           <h3><a href="#">First column</a></h3>
           <p>No default class Alerts don't have default classes, only base and modifier classes. A default gray alert doesn't make too much sense, so you're required to specify a type via contextual class. Choose from success, info, warning, or danger. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
@@ -114,14 +115,7 @@
           <a href="#" class="btn btn-default">See more!</a>
         </div>
 
-
-
-
       </div>
-
-
-
-
 
     </section>
 
@@ -153,8 +147,16 @@
       </div>
     </footer>
 
-
-
+<!--creating the model for contact/when we create it at the bottom it will load last when someone clicks on the website!-->
+    <div class="modal fade" id="contact" role="dialog"> <!--fade= transition-->
+      <div class="modal-dialog">
+        <div class="modal-contact">
+          <div class="modal-header">
+            <p>Contact Tech Site</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
