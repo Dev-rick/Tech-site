@@ -26,6 +26,56 @@
 
 
 
+<!--Alert Boxes (green=success)(blue=information) (orange=alert) (red=danger)-->
+    <div clas="container"> <!--streches to the full width-->
+      <div class="alert alert-success ">
+        Lorem ipsum dolor
+      </div>
+    </div>
+
+  <!-- can be closed-->
+    <div clas="container"> <!--streches to the full width-->
+      <div class="alert alert-danger alert-dismissible">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        Lorem ipsum dolor
+      </div>
+    </div>
+
+
+
+<!--Input Groups (things attached to textboxes) -->
+   <div class="container">
+<!--with  text-addon and one checkbox-->
+
+      <div class="input-group col-sm-3">
+        <span class="input-group-addon">$</span> <!--attached to textbox-->
+        <input type="text" class="form-control" placeholder="enter price" />
+        <span class="input-group-addon">
+          <input type="checkbox" />
+        </span>
+      </div>
+
+<br />
+   <!--with text-addon and a radio btn-->
+      <div class="input-group input-group-lg"> <!--input-group-lg makes it bigger-->
+        <span class="input-group-addon">$</span><!--attached to textbox-->
+        <input type="text" class="form-control" placeholder="enter price" />
+        <span class="input-group-addon">
+          <input type="radio" />
+        </span>
+      </div>
+
+<br />
+   <!--with one btn attached to the textfield-->
+      <div class="input-group col-sm-3">
+        <input type="text" class="form-control" placeholder="enter price" />
+        <span class="input-group-btn">
+          <button class="btn btn-primary">search</button>
+        </span>
+      </div>
+
+    </div>
+
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
