@@ -22,3 +22,10 @@ body{
 .featuredimg{
   margin-bottom: 15px;
 }
+
+/*for extras.html*/
+.featureimg{
+  display: block;
+  width: 100%;
+  max-height: 300px;
+  }

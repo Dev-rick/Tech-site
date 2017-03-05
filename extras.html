@@ -11,30 +11,86 @@
   </head>
   <body>
 
-    <div class="container-fluid">
 
 
 <!-- Breadcrumb=showing the different structures you are currently on-->
+    <div class="container-fluid">
       <ol class="breadcrumb"> <!--ordened list-->
-        <li><a href="#">Coder's Guide</a></li>
-        <li><a  href="#">Tutorials</a></li>
-        <li><a  href="#">Web Dev</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a  href="read.html">Blog</a></li>
         <li class="active">Bootstrap</a></li>
       </ol>
     </div>
 
 
+<!--making a carousel/photo gallery-->
+
+    <div id="myCarousel" class="carousel slide"> <!--slide=makes a transition-->
+
+      <ol class="carousel-indicators"> <!-- makes the points to switch from on photo to another-->
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li> <!--data-target=to let the li know to what we are referencing/ data-slide-to="0" ->to which position it goes/active=the first one you screen-->
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner"> <!--the content of the slides-->
+        <div class="item active"> <!--only one can be active-->
+          <img src="img/0.jpg" class="img-responsive featureimg" alt="code0"/> <!--img-responive= makes the img responsive to the screen--->
+          <div class="carousel-caption">
+            <h3>CSS</h3>
+            <p>Cascading Style Sheets (englische Aussprache [kæsˌkeɪdɪŋˈstaɪlʃiːts]; für gestufte Gestaltungsbögen), kurz CSS genannt, ist eine Stylesheet-Sprache für elektronische Dokumente und zusammen mit HTML und DOM eine der Kernsprachen des World Wide Webs.</p>
+          </div>
+
+        </div>
+        <div class="item">
+          <img src="img/1.jpg" class="img-responsive featureimg" alt="code1"/> <!--img-responive= makes the img responsive to the screen--->
+          <div class="carousel-caption">
+            <h3>HTML</h3>
+            <p>Die Hypertext Markup Language (englisch für Hypertext-Auszeichnungssprache), abgekürzt HTML, ist eine textbasierte Auszeichnungssprache zur Strukturierung digitaler Dokumente wie Texte mit Hyperlinks, Bildern und anderen Inhalten.</p>
+          </div>
+
+        </div>
+        <div class="item">
+          <img src="img/2.jpg" class="img-responsive featureimg" alt="code2"/> <!--img-responive= makes the img responsive to the screen--->
+          <div class="carousel-caption">
+            <h3>CODING</h3>
+            <p>Programmierung (von altgriechisch πρόγραμμα prógramma „öffentlich und schriftlich bekannt gemachte Nachricht, Befehl“)[1] bezeichnet die Tätigkeit, Computerprogramme zu erstellen. Das ist ein Teilbereich der Softwareentwicklung[2] und umfasst vor allem die Umsetzung (Implementierung) des Softwareentwurfs in Quellcode sowie – je nach Programmiersprache – das Übersetzen des Quellcodes in die Maschinensprache, meist unter Verwendung eines Compilers.</p>
+          </div>
+        </div>
+      </div>
+
+
+
+<!--buttons on the side-->
+      <a class="carousel-control left" href="#myCarousel" data-slide="prev"> <!--prev enables to slide to the preview/ left= adds a dark hover to the left-->
+         <span class="icon-prev"></span> <!--gives us the little icon-->
+      </a>
+      <a class="carousel-control right" href="#myCarousel" data-slide="next"> <!--next enables to slide to the next/ right= adds a dark hover to the right-->
+         <span class="icon-next"></span> <!--gives us the little icon-->
+      </a>
+
+
+    </div>
+
+
+
+
+
+
+<br />
+
+
+
 
 
 <!--Alert Boxes (green=success)(blue=information) (orange=alert) (red=danger)-->
-    <div clas="container"> <!--streches to the full width-->
+    <div class="container"> <!--streches to the full width-->
       <div class="alert alert-success ">
         Lorem ipsum dolor
       </div>
     </div>
 
   <!-- can be closed-->
-    <div clas="container"> <!--streches to the full width-->
+    <div class="container"> <!--streches to the full width-->
       <div class="alert alert-danger alert-dismissible">
         <button type="button" class="close" data-dismiss="alert">&times;</button>
         Lorem ipsum dolor
@@ -49,13 +105,16 @@
 
       <div class="input-group col-sm-3">
         <span class="input-group-addon">$</span> <!--attached to textbox-->
-        <input type="text" class="form-control" placeholder="enter price" />
+        <input type="number" class="form-control" placeholder="enter price" />
         <span class="input-group-addon">
           <input type="checkbox" />
         </span>
       </div>
 
-<br />
+
+      <br />
+
+
    <!--with text-addon and a radio btn-->
       <div class="input-group input-group-lg"> <!--input-group-lg makes it bigger-->
         <span class="input-group-addon">$</span><!--attached to textbox-->
@@ -65,7 +124,10 @@
         </span>
       </div>
 
-<br />
+
+      <br />
+
+
    <!--with one btn attached to the textfield-->
       <div class="input-group col-sm-3">
         <input type="text" class="form-control" placeholder="enter price" />
@@ -75,6 +137,13 @@
       </div>
 
     </div>
+
+
+
+    <br />
+
+
+
 
 
 
