@@ -8,15 +8,17 @@
   margin-right: 1px;
 }
 
-.margin-bottom{
+body{
   margin-bottom: 70px;
 }
-
-
 
 .page-header {
   margin-top: 0;
 }
 .panel-body {
   padding-top: 0;
+}
+
+.featuredimg{
+  margin-bottom: 15px;
 }
